@@ -6,11 +6,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Montserrat:wght@300;400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
+/*CSS variable */
+:root{
+    --primary :  #0081a7;
+}
+
+
 *{
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
 
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Alegreya', serif;
+    
+  }
+
+  .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .sub-title {
+      margin-bottom: 10px;
   }
   
+   
+  .btn {
+    color:black;
+    
+    padding-left: 20px;
+    padding-right: 20px; 
+    height: 45px;
+    line-height: 45px; 
+     box-sizing: border-box;
+    border-radius: 5px;
+     font-size: 20px;
+
+  }
+   .btn-lavender {
+    border: 2px solid #8338ec;
+    background-color: #8338ec;
+   }
+   .btn-primary {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+   }
+   .square {
+    width: 48px;
+    height: 48px;
+    /*if no  icon for text you put below code */
+    /* text-align: center;  
+    line-height: 48px; */
+   }
+   .rounded-circle {
+    border-radius: 50%;
+  }
+  
+  .rounded-pill {
+    border-radius: 24px;
+  }
+  
+
+  .btn-outline-primary {
+   
+    background-color: transparent;   /* same like opacity: 0; */
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+
+  .link {
+     display: inline-block;
+     text-decoration: none;
+     box-sizing: border-box;
+     border: 2px solid #8338ec;
+     background-color: #8338ec;
+     
+  }
+
+  .box {
+    
+    border: 2px solid black;
+    padding:20px;
+    border-radius: 10px;
+  }
